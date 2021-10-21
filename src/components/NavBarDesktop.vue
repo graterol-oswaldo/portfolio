@@ -17,7 +17,7 @@ const swMobileMode = () => {
         <div class="flex-shrink-0">
           <img
             class="h-8 w-8"
-            src="/images/Mr_Smiley_Face.svg"
+            src="./images/Mr_Smiley_Face.svg"
             alt="Workflow"
           />
         </div>

@@ -32,7 +32,7 @@ const props = defineProps({
     </div>
     <div class="w-full md:inline-grid grid-cols-1 md:grid-cols-2 grid-rows-1">
       <div class="w-full p-2">
-        <img class="border-4" :src="'/appscreenshots/' + images" alt="" />
+        <img class="border-4" :src="'./appscreenshots/' + images" alt="" />
       </div>
       <div class="w-full grid-cols-1 grid-rows-4">
         <div class="w-full grid-cols-1 grid-rows-1 p-4">

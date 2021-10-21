@@ -240,7 +240,7 @@
     <div class="w-full lg:w-2/5">
       <!-- Big profile image for side bar (desktop) -->
       <img
-        src="/freelancePhoto.jpg"
+        src="./freelancePhoto.jpg"
         class="
           rounded-none
           lg:rounded-lg

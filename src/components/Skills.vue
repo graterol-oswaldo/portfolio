@@ -1,6 +1,6 @@
 <script setup>
 import { skills_data } from "../assets/data/skills";
-const image_path = "/images/";
+const image_path = "./images/";
 </script>
 <template>
   <!-- Skill -->
