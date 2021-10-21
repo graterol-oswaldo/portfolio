@@ -47,7 +47,7 @@
             w-48
             bg-cover bg-center
           "
-          style="background-image: url('/freelancePhoto.jpg')"
+          style="background-image: url('./freelancePhoto.jpg')"
         ></div>
 
         <h1 class="text-4xl font-bold pt-8 lg:pt-0">Oswaldo A. Graterol T.</h1>
