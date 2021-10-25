@@ -27,7 +27,7 @@ const sortStudies = computed(() => {
             />
           </svg>
         </div>
-        <div class="flex-row">
+        <div class="flex-row text-gray-900 dark:text-white">
           <h3 class="text-lg font-bold">
             {{ item.program }}
           </h3>

@@ -11,20 +11,29 @@ const swMobileMode = () => {
 };
 </script>
 <template>
-  <div class="md:hidden" id="mobile-menu">
+  <div class="md:hidden absolute w-full z-50" id="mobile-menu">
     <div
       id="navMobileMenu"
-      class="px-2 pt-2 pb-3 space-y-1 sm:px-3"
+      class="
+        px-2
+        pt-2
+        pb-3
+        space-y-1
+        sm:px-3
+        bg-white
+        dark:bg-gray-900
+        text-gray-900
+        dark:text-white
+      "
       :class="[store.state.mobileMode ? '' : 'hidden']"
     >
-      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-900 hover:text-white" -->
 
       <a
         @click="setActiveComp(1)"
         class="
-          text-gray-900
-          bg-white
-          hover:bg-gray-700 hover:text-white
+          hover:bg-gray-900 hover:text-white
+          dark:hover:bg-white dark:hover:text-gray-900
           block
           px-3
           py-2
@@ -38,9 +47,8 @@ const swMobileMode = () => {
       <a
         @click="setActiveComp(2)"
         class="
-          text-gray-900
-          bg-white
-          hover:bg-gray-700 hover:text-white
+          hover:bg-gray-900 hover:text-white
+          dark:hover:bg-white dark:hover:text-gray-900
           block
           px-3
           py-2
@@ -54,9 +62,8 @@ const swMobileMode = () => {
       <a
         @click="setActiveComp(3)"
         class="
-          text-gray-900
-          bg-white
-          hover:bg-gray-700 hover:text-white
+          hover:bg-gray-900 hover:text-white
+          dark:hover:bg-white dark:hover:text-gray-900
           block
           px-3
           py-2
@@ -70,9 +77,8 @@ const swMobileMode = () => {
       <a
         @click="setActiveComp(4)"
         class="
-          text-gray-900
-          bg-white
-          hover:bg-gray-700 hover:text-white
+          hover:bg-gray-900 hover:text-white
+          dark:hover:bg-white dark:hover:text-gray-900
           block
           px-3
           py-2

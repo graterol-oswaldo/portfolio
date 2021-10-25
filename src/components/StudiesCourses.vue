@@ -17,7 +17,7 @@ const sortStudies = computed(() => {
       <div class="flex flex-row">
         <div class="pt-2">
           <svg
-            class="w-6 h-6"
+            class="w-6 h-6 text-gray-900 dark:text-white"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -31,7 +31,7 @@ const sortStudies = computed(() => {
             ></path>
           </svg>
         </div>
-        <div>
+        <div class="text-gray-900 dark:text-white">
           <div>
             <h4 class="text-md font-bold inline-flex mr-2 pt-2">
               {{ item.course }}

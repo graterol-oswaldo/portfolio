@@ -17,10 +17,18 @@ function swtichTabStudies(value) {
       <div class="px-4 py-6 sm:px-0">
         <div
           id="studies"
-          class="bg-white h-auto w-full opacity-95 rounded-xl shadow-sm"
+          class="
+            bg-white
+            dark:bg-gray-900
+            h-auto
+            w-full
+            opacity-95
+            rounded-xl
+            shadow-sm
+          "
         >
           <h2 class="text-3xl font-extrabold text-center py-3">Estudios</h2>
-          <div class="bg-white">
+          <div class="bg-white dark:bg-gray-900">
             <nav class="flex flex-col sm:flex-row">
               <button
                 @click="swtichTabStudies(true)"
@@ -35,8 +43,8 @@ function swtichTabStudies(value) {
                 "
                 :class="[
                   tabStudies
-                    ? 'hover:text-gray-600 text-purple-500'
-                    : ' hover:text-purple-500 text-gray-600',
+                    ? 'text-purple-500 hover:text-gray-600'
+                    : 'text-gray-600 hover:text-purple-500',
                 ]"
               >
                 Académicos</button

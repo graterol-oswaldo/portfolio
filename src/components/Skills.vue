@@ -10,7 +10,17 @@ const image_path = "./images/";
       <div class="px-4 py-6 sm:px-0">
         <div
           id="skill"
-          class="bg-white h-auto w-full opacity-95 rounded-xl shadow-sm"
+          class="
+            bg-white
+            dark:bg-gray-900
+            text-gray-900
+            dark:text-white
+            h-auto
+            w-full
+            opacity-95
+            rounded-xl
+            shadow-sm
+          "
         >
           <h2 class="text-3xl font-extrabold text-center py-3">Perfil</h2>
           <div class="mx-auto pt-1 border-b-2 border-blue-500 opacity-25"></div>

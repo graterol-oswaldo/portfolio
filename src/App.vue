@@ -10,25 +10,27 @@ const store = useStore();
 </script>
 
 <template>
-  <NavBar />
+  <div class="z=10" :class="[store.state.darkMode ? 'dark' : '']">
+    <NavBar />
 
-  <!-- <div class="absolute top-20 bottom-0 overflow-y-scroll w-100"> -->
-  <transition name="bounce">
-    <AboutMe v-if="store.state.activeComp == 1" />
-  </transition>
+    <!-- <div class="absolute top-20 bottom-0 overflow-y-scroll w-100"> -->
+    <transition name="bounce">
+      <AboutMe class="z-20" v-if="store.state.activeComp == 1" />
+    </transition>
 
-  <transition name="bounce">
-    <Studies v-if="store.state.activeComp == 2" />
-  </transition>
+    <transition name="bounce">
+      <Studies class="z-20" v-if="store.state.activeComp == 2" />
+    </transition>
 
-  <transition name="bounce">
-    <Skills v-if="store.state.activeComp == 3" />
-  </transition>
+    <transition name="bounce">
+      <Skills class="z-20" v-if="store.state.activeComp == 3" />
+    </transition>
 
-  <transition name="bounce">
-    <Portfolio v-if="store.state.activeComp == 4" />
-  </transition>
-  <!-- </div> -->
+    <transition name="bounce">
+      <Portfolio class="z-20" v-if="store.state.activeComp == 4" />
+    </transition>
+    <!-- </div> -->
+  </div>
 </template>
 <style>
 .bounce-enter-active {

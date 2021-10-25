@@ -5,7 +5,7 @@ import NavBarMobile from "./NavBarMobile.vue";
 <template>
   <!-- Nav Bar -->
   <div>
-    <nav id="navbar" class="bg-white w-full z-10">
+    <nav id="navbar" class="bg-white dark:bg-gray-900 w-full z-50">
       <NavBarDesktop />
       <!-- Mobile menu, show/hide based on menu state. -->
       <NavBarMobile />
