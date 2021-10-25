@@ -1,4 +1,10 @@
-<script setup></script>
+<script setup>
+import { about_me_data } from "../assets/data/about_me";
+import { useStore } from "vuex";
+import { computed } from "vue";
+const store = useStore();
+const lang = computed(() => store.state.activeLang);
+</script>
 <template>
   <!-- About me  -->
 
@@ -26,6 +32,7 @@
         lg:rounded-l-lg lg:rounded-r-none
         shadow-2xl
         bg-white
+        dark:bg-gray-900
         opacity-95
         mx-6
         lg:mx-0
@@ -50,7 +57,11 @@
           style="background-image: url('./freelancePhoto.jpg')"
         ></div>
 
-        <h1 class="text-4xl font-bold pt-8 lg:pt-0">Oswaldo A. Graterol T.</h1>
+        <h1
+          class="text-gray-900 dark:text-white text-4xl font-bold pt-8 lg:pt-0"
+        >
+          {{ about_me_data[lang].name }}
+        </h1>
         <div
           class="
             mx-auto
@@ -64,6 +75,8 @@
         <p
           class="
             pt-4
+            text-gray-900
+            dark:text-white
             text-lg
             font-bold
             flex
@@ -81,11 +94,13 @@
               d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9v-2zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9v2zm3-8V2H8v1h4z"
             />
           </svg>
-          Desarrollador Web Full Stack / SysAdmin
+          {{ about_me_data[lang].profile }}
         </p>
         <p
           class="
             pt-2
+            text-gray-900
+            dark:text-white
             text-xs
             lg:text-sm
             flex
@@ -103,12 +118,14 @@
               d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
             />
           </svg>
-          Ingeniero en Computación
+          {{ about_me_data[lang].title }}
         </p>
         <p
           class="
             pt-2
-            text-gray-600 text-xs
+            text-gray-600
+            dark:text-white
+            text-xs
             lg:text-sm
             flex
             items-center
@@ -125,16 +142,13 @@
               d="M10 20a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm7.75-8a8.01 8.01 0 0 0 0-4h-3.82a28.81 28.81 0 0 1 0 4h3.82zm-.82 2h-3.22a14.44 14.44 0 0 1-.95 3.51A8.03 8.03 0 0 0 16.93 14zm-8.85-2h3.84a24.61 24.61 0 0 0 0-4H8.08a24.61 24.61 0 0 0 0 4zm.25 2c.41 2.4 1.13 4 1.67 4s1.26-1.6 1.67-4H8.33zm-6.08-2h3.82a28.81 28.81 0 0 1 0-4H2.25a8.01 8.01 0 0 0 0 4zm.82 2a8.03 8.03 0 0 0 4.17 3.51c-.42-.96-.74-2.16-.95-3.51H3.07zm13.86-8a8.03 8.03 0 0 0-4.17-3.51c.42.96.74 2.16.95 3.51h3.22zm-8.6 0h3.34c-.41-2.4-1.13-4-1.67-4S8.74 3.6 8.33 6zM3.07 6h3.22c.2-1.35.53-2.55.95-3.51A8.03 8.03 0 0 0 3.07 6z"
             />
           </svg>
-          Caracas, Venezuela
+          {{ about_me_data[lang].location }}
         </p>
-        <p class="pt-8 text-sm">
-          Apasionado entusiasta por la informática y temas tecnológicos,
-          pro-activo y autodidacta.
+        <p class="pt-8 text-sm text-justify text-gray-900 dark:text-white">
+          {{ about_me_data[lang].section1 }}
         </p>
-        <p class="pt-2 text-sm">
-          Perfil técnico principalmente en el área de desarrollo de aplicaciones
-          y administración de sistemas, en su mayoría con tecnologías de
-          estándares abiertos.
+        <p class="pt-2 text-sm text-justify text-gray-900 dark:text-white">
+          {{ about_me_data[lang].section2 }}
         </p>
 
         <div
