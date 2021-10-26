@@ -1,8 +1,12 @@
 <script setup>
 import { studies_courses_data } from "../assets/data/studies_courses";
 import { computed } from "@vue/reactivity";
+import { useStore } from "vuex";
+const store = useStore();
+const lang = computed(() => store.state.activeLang);
 const sortStudies = computed(() => {
-  return studies_courses_data.sort((a, b) => {
+  const data = [...studies_courses_data[lang.value]];
+  return data.sort((a, b) => {
     return b.year - a.year;
   });
 });

@@ -1,6 +1,7 @@
 <script setup>
 import { useStore } from "vuex";
 import { ref, computed } from "vue";
+import { lang_data } from "../assets/data/lang";
 
 const store = useStore();
 const setActiveComp = (value) => {
@@ -14,6 +15,13 @@ const swDarkMode = () => {
   const modeDark = !store.state.darkMode;
   store.commit("setDarkMode", modeDark);
 };
+const currentLang = computed(() => store.state.activeLang);
+const setActiveLang = () => {
+  store.commit("setActiveLang");
+};
+const flagIconLang = computed(() => {
+  return currentLang.value == "es" ? "united-kingdom.svg" : "spain.svg";
+});
 const darkMode = computed(() => store.state.darkMode);
 </script>
 <template>
@@ -45,7 +53,7 @@ const darkMode = computed(() => store.state.darkMode);
                 font-bold
               "
             >
-              Sobre mí
+              {{ lang_data[currentLang].aboutme }}
             </button>
 
             <button
@@ -62,7 +70,7 @@ const darkMode = computed(() => store.state.darkMode);
                 font-bold
               "
             >
-              Estudios
+              {{ lang_data[currentLang].studies }}
             </button>
 
             <button
@@ -79,7 +87,7 @@ const darkMode = computed(() => store.state.darkMode);
                 font-bold
               "
             >
-              Perfil
+              {{ lang_data[currentLang].skills }}
             </button>
 
             <button
@@ -96,13 +104,23 @@ const darkMode = computed(() => store.state.darkMode);
                 font-bold
               "
             >
-              Portafolio
+              {{ lang_data[currentLang].portfolio }}
             </button>
           </div>
         </div>
         <!-- Pin to top right corner -->
         <!-- class="absolute top-0 right-1/4 h-12 w-18 p-4 z-20" -->
-        <div class="flex absolute right-1/4">
+        <div class="flex absolute right-1/4 md:right-10">
+          <div class="flex mr-10">
+            <!-- <button @click="setActiveLang()">{{ currentLang }}</button> -->
+            <button @click="setActiveLang()">
+              <img
+                class="h-6 w-6 text-center mr-auto ml-auto"
+                :src="'./images/' + flagIconLang"
+                alt="html_logo"
+              />
+            </button>
+          </div>
           <!-- <button class="js-change-theme focus:outline-none hidden">🌙</button> -->
           <!-- Swtich Dark Mode -->
           <svg

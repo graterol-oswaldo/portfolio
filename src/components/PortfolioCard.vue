@@ -63,7 +63,7 @@ const props = defineProps({
           </a>
         </div>
         <div class="w-full grid-cols-1 grid-rows-1 p-4">
-          <p class="text-md font-sans font-light">
+          <p class="text-md font-sans font-light text-justify">
             {{ description }}
           </p>
         </div>

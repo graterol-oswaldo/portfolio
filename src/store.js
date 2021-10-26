@@ -17,5 +17,10 @@ export default createStore({
     setDarkMode(state, value) {
       state.darkMode = value;
     },
+    setActiveLang(state) {
+      const currentLang = state.activeLang;
+      const newLang = currentLang == "es" ? "en" : "es";
+      state.activeLang = newLang;
+    },
   },
 });

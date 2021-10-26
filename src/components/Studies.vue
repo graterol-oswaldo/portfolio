@@ -1,10 +1,12 @@
 <script setup>
 import StudiesAcademic from "./StudiesAcademic.vue";
 import StudiesCourses from "./StudiesCourses.vue";
-import { ref } from "vue";
-
+import { lang_data } from "../assets/data/lang";
+import { useStore } from "vuex";
+import { ref, computed } from "vue";
+const store = useStore();
+const lang = computed(() => store.state.activeLang);
 const tabStudies = ref(true);
-
 function swtichTabStudies(value) {
   tabStudies.value = value;
 }
@@ -12,7 +14,7 @@ function swtichTabStudies(value) {
 <template>
   <!-- Academic Studies -->
   <main>
-    <div class="max-w-7xl mx-auto my-auto py-20 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto my-auto py-10 lg:py-20 sm:px-6 lg:px-8">
       <!-- Replace with your content -->
       <div class="px-4 py-6 sm:px-0">
         <div
@@ -27,7 +29,9 @@ function swtichTabStudies(value) {
             shadow-sm
           "
         >
-          <h2 class="text-3xl font-extrabold text-center py-3">Estudios</h2>
+          <h2 class="text-3xl font-extrabold text-center py-3">
+            {{ lang_data[lang].studies }}
+          </h2>
           <div class="bg-white dark:bg-gray-900">
             <nav class="flex flex-col sm:flex-row">
               <button
@@ -47,7 +51,7 @@ function swtichTabStudies(value) {
                     : 'text-gray-600 hover:text-purple-500',
                 ]"
               >
-                Académicos</button
+                {{ lang_data[lang].academics }}</button
               ><button
                 @click="swtichTabStudies(false)"
                 class="
@@ -65,7 +69,7 @@ function swtichTabStudies(value) {
                     : ' hover:text-purple-500 text-gray-600',
                 ]"
               >
-                Cursos
+                {{ lang_data[lang].courses }}
               </button>
             </nav>
           </div>
