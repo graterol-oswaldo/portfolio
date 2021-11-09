@@ -22,6 +22,8 @@ function swtichTabStudies(value) {
           class="
             bg-white
             dark:bg-gray-900
+            text-gray-900
+            dark:text-white
             h-auto
             w-full
             opacity-95
