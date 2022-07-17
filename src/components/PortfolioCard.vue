@@ -11,7 +11,7 @@ const props = defineProps({
 });
 </script>
 <template>
-  <div class="grid border-2">
+  <div class="grid border-2 md:h-96">
     <div class="grid-cols-1 grid-rows-1 p-3">
       <span
         class="

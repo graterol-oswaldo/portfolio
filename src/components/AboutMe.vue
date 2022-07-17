@@ -9,51 +9,17 @@ const lang = computed(() => store.state.activeLang);
   <!-- About me  -->
 
   <div
-    class="
-      max-w-4xl
-      flex
-      items-center
-      h-auto
-      lg:h-screen
-      flex-wrap
-      mx-auto
-      my-16
-      md:my-32
-      lg:my-0
-    "
+    class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-16 md:my-32 lg:my-0"
   >
     <!--Main Col-->
     <div
       id="profile"
-      class="
-        w-full
-        lg:w-3/5
-        rounded-lg
-        lg:rounded-l-lg lg:rounded-r-none
-        shadow-2xl
-        bg-white
-        dark:bg-gray-900
-        opacity-95
-        mx-6
-        lg:mx-0
-      "
+      class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white dark:bg-gray-900 opacity-95 mx-6 lg:mx-0"
     >
       <div class="p-4 md:p-12 text-center lg:text-left">
         <!-- Image for mobile view-->
         <div
-          class="
-            filter
-            grayscale
-            block
-            lg:hidden
-            rounded-full
-            shadow-xl
-            mx-auto
-            mt-16
-            h-48
-            w-48
-            bg-cover bg-center
-          "
+          class="filter grayscale block lg:hidden rounded-full shadow-xl mx-auto mt-16 h-48 w-48 bg-cover bg-center"
           style="background-image: url('./freelancePhoto.jpg')"
         ></div>
 
@@ -63,27 +29,10 @@ const lang = computed(() => store.state.activeLang);
           {{ about_me_data[lang].name }}
         </h1>
         <div
-          class="
-            mx-auto
-            lg:mx-0
-            w-4/5
-            pt-3
-            border-b-2 border-blue-500
-            opacity-25
-          "
+          class="mx-auto lg:mx-0 w-4/5 pt-3 border-b-2 border-blue-500 opacity-25"
         ></div>
         <p
-          class="
-            pt-4
-            text-gray-900
-            dark:text-white
-            text-lg
-            font-bold
-            flex
-            items-center
-            justify-center
-            lg:justify-start
-          "
+          class="pt-4 text-gray-900 dark:text-white text-lg font-bold flex items-center justify-center lg:justify-start"
         >
           <svg
             class="h-4 fill-current text-blue-700 md:pr-4 invisible md:visible"
@@ -97,17 +46,7 @@ const lang = computed(() => store.state.activeLang);
           {{ about_me_data[lang].profile }}
         </p>
         <p
-          class="
-            pt-2
-            text-gray-900
-            dark:text-white
-            text-xs
-            lg:text-sm
-            flex
-            items-center
-            justify-center
-            lg:justify-start
-          "
+          class="pt-2 text-gray-900 dark:text-white text-xs lg:text-sm flex items-center justify-center lg:justify-start"
         >
           <svg
             class="h-4 fill-current text-blue-700 md:pr-4 invisible md:visible"
@@ -121,17 +60,7 @@ const lang = computed(() => store.state.activeLang);
           {{ about_me_data[lang].title }}
         </p>
         <p
-          class="
-            pt-2
-            text-gray-600
-            dark:text-white
-            text-xs
-            lg:text-sm
-            flex
-            items-center
-            justify-center
-            lg:justify-start
-          "
+          class="pt-2 text-gray-600 dark:text-white text-xs lg:text-sm flex items-center justify-center lg:justify-start"
         >
           <svg
             class="h-4 fill-current text-blue-700 md:pr-4 invisible md:visible"
@@ -152,17 +81,7 @@ const lang = computed(() => store.state.activeLang);
         </p>
 
         <div
-          class="
-            mt-6
-            pb-16
-            lg:pb-0
-            w-4/5
-            lg:w-full
-            mx-auto
-            flex flex-wrap
-            items-center
-            justify-between
-          "
+          class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
         >
           <a
             href="https://twitter.com/oswaldograterol?lang=es"
@@ -215,20 +134,10 @@ const lang = computed(() => store.state.activeLang);
 
           <div>
             <a
-              href="/Resumen_Oswaldo_Graterol.pdf"
+              @click=""
               data-tippy-content="Curriculum"
-              target="_blank"
-              class="
-                bg-blue-700
-                hover:bg-blue-900
-                text-white
-                font-bold
-                py-2
-                px-4
-                rounded-xl
-                inline-flex
-                items-center
-              "
+              target="_self"
+              class="bg-blue-700 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded-xl inline-flex items-center"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-4 w-4 mr-2 fill-current"
@@ -255,16 +164,7 @@ const lang = computed(() => store.state.activeLang);
       <!-- Big profile image for side bar (desktop) -->
       <img
         src="/freelancePhoto.jpg"
-        class="
-          rounded-none
-          lg:rounded-lg
-          shadow-2xl
-          hidden
-          lg:block
-          border-2
-          filter
-          grayscale
-        "
+        class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block border-2 filter grayscale"
       />
       <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
     </div>

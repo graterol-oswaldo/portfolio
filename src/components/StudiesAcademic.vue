@@ -12,7 +12,7 @@ const sortStudies = computed(() => {
 });
 </script>
 <template>
-  <div class="grid sm:grid-cols-1 sm:gap-2 md:grid-cols-2 md:gap-3 p-8">
+  <div class="grid sm:grid-cols-1 sm:gap-2 md:grid-cols-2 md:gap-3 p-8 h-80">
     <div
       :class="[item.id == 1 ? 'pt-2 md:pt-2' : 'pt-4 md:pt-2']"
       v-for="item in sortStudies"

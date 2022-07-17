@@ -32,6 +32,7 @@ const image_path = "./images/";
           </h2>
           <div class="mx-auto pt-1 border-b-2 border-blue-500 opacity-25"></div>
           <!-- frontend -->
+        <div class="max-h-96 overflow-auto">
           <div
             class="
               grid
@@ -41,6 +42,7 @@ const image_path = "./images/";
               justify-items-center
               text-center
               py-8
+               
             "
           >
             <div
@@ -58,6 +60,7 @@ const image_path = "./images/";
                 <h3 class="text-center text-xl font-black">{{ item.name }}</h3>
               </a>
             </div>
+          </div>
           </div>
         </div>
         <!-- /End replace -->

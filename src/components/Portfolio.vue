@@ -25,7 +25,7 @@ const portfolio = computed(() => portfolio_data[lang.value]);
             dark:bg-gray-900
             text-gray-900
             dark:text-white
-            h-auto
+            
             w-full
             opacity-95
             rounded-xl
@@ -37,18 +37,19 @@ const portfolio = computed(() => portfolio_data[lang.value]);
           </h2>
           <div class="mx-auto pt-1 border-b-2 border-blue-500 opacity-25"></div>
           <!-- frontend -->
-
-          <PortfolioCard
-            v-for="item in portfolio"
-            :key="item.id"
-            :type="item.type"
-            :title="item.title"
-            :url="item.url"
-            :description="item.description"
-            :images="item.images"
-            :tech_stack="item.tech_stack"
-          >
-          </PortfolioCard>
+          <div class="max-h-96 overflow-auto">
+            <PortfolioCard
+              v-for="item in portfolio"
+              :key="item.id"
+              :type="item.type"
+              :title="item.title"
+              :url="item.url"
+              :description="item.description"
+              :images="item.images"
+              :tech_stack="item.tech_stack"
+            >
+            </PortfolioCard>
+          </div>
         </div>
       </div>
       <!-- /End replace -->

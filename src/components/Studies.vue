@@ -76,10 +76,12 @@ function swtichTabStudies(value) {
             </nav>
           </div>
           <div class="mx-auto pt-1 border-b-2 border-blue-500 opacity-25"></div>
+          <div class="max-h-96 overflow-auto">
           <transition name="fade" mode="out-in">
             <StudiesAcademic v-if="tabStudies" />
             <StudiesCourses v-else />
           </transition>
+          </div>
         </div>
       </div>
       <!-- /End replace -->
