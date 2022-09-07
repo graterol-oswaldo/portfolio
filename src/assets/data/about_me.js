@@ -4,6 +4,9 @@ export const about_me_data = {
     profile: "Desarrollador Web Full Stack / SysAdmin",
     title: "Ingeniero en Computación",
     location: "Caracas, Venezuela",
+    twitter: "https://twitter.com/oswaldograterol?lang=es",
+    linkedIn: "https://www.linkedin.com/in/oswaldo-graterol/?locale=es_ES",
+    github: "https://github.com/graterol-oswaldo",
     section1:
       "Apasionado entusiasta por la informática y temas tecnológicos, pro-activo y autodidacta.",
     section2:
@@ -14,6 +17,9 @@ export const about_me_data = {
     profile: "Full Stack Web Developer / SysAdmin",
     title: "Computer Engineer",
     location: "Caracas, Venezuela",
+    twitter: "https://twitter.com/oswaldograterol?lang=en",
+    linkedIn: "https://www.linkedin.com/in/oswaldo-graterol/",
+    github: "https://github.com/graterol-oswaldo",
     section1:
       "Passionate, enthusiastic about computing and technological issues, proactive and self-taught.",
     section2:
