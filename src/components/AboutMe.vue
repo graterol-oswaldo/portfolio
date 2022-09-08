@@ -4,6 +4,8 @@ import { useStore } from "vuex";
 import { computed } from "vue";
 const store = useStore();
 const lang = computed(() => store.state.activeLang);
+const publicPath = './';
+
 </script>
 <template>
   <!-- About me  -->
@@ -169,7 +171,7 @@ const lang = computed(() => store.state.activeLang);
     <div class="w-full lg:w-2/5">
       <!-- Big profile image for side bar (desktop) -->
       <img
-        src="freelancePhoto.jpg"
+        :src="publicPath + 'freelancePhoto.jpg'"
         class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block border-2 filter grayscale"
       />
       <!-- Image from: http://unsplash.com/photos/MP0IUfwrn0A -->
