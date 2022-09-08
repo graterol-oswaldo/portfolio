@@ -20,7 +20,7 @@ const lang = computed(() => store.state.activeLang);
         <!-- Image for mobile view-->
         <div
           class="filter grayscale block lg:hidden rounded-full shadow-xl mx-auto mt-16 h-48 w-48 bg-cover bg-center"
-          style="background-image: url('./freelancePhoto.jpg')"
+          style="background-image: url('freelancePhoto.jpg')"
         ></div>
 
         <h1
