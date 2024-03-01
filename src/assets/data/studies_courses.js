@@ -1,6 +1,27 @@
 export const studies_courses_data = {
   es: [
     {
+      year: 2024,
+      course: "Fundamentos de Python",
+      institute: "Platzi",
+      website: "https://platzi.com/p/oswaldog/curso/4227-python/diploma/detalle/",
+      credential: "",
+    },
+    {
+      year: 2024,
+      course: "Curso de Java SE Orientado a Objetos",
+      institute: "Platzi",
+      website: "https://platzi.com/p/oswaldog/curso/1629-java-oop/diploma/detalle/",
+      credential: "",
+    },
+    {
+      year: 2023,
+      course: "Fundamentos del Cloud Computing",
+      institute: "Código Facilito",
+      website: "https://codigofacilito.com/certificates/80069",
+      credential: "",
+    },
+    {
       year: 2021,
       course: "Curso de MongoDB y Node.js con Mongoose",
       institute: "Código Facilito",
@@ -174,6 +195,27 @@ export const studies_courses_data = {
     },
   ],
   en: [
+    {
+      year: 2024,
+      course: "Python Fundamentals",
+      institute: "Platzi",
+      website: "https://platzi.com/p/oswaldog/curso/4227-python/diploma/detalle/",
+      credential: "",
+    },
+    {
+      year: 2024,
+      course: "Java SE Object Oriented Course",
+      institute: "Platzi",
+      website: "https://platzi.com/p/oswaldog/curso/1629-java-oop/diploma/detalle/",
+      credential: "",
+    },
+    {
+      year: 2023,
+      course: "Cloud Computing Fundamentals",
+      institute: "Código Facilito",
+      website: "https://codigofacilito.com/certificates/80069",
+      credential: "",
+    },
     {
       year: 2021,
       course: "MongoDB and Node.js with Mongoose Course",
